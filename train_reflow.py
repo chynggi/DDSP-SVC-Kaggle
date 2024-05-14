@@ -59,7 +59,7 @@ if __name__ == '__main__':
     
     # device
     if args.device == 'cuda':
-        torch.cuda.set_device(torch.device('cuda:0,1'))
+        torch.cuda.set_device(torch.device("cuda"))
     model.to(args.device)
     
     for state in optimizer.state.values():
