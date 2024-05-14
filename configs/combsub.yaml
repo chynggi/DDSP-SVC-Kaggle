@@ -29,9 +29,9 @@ loss:
 device: cuda
 env:
   expdir: exp/combsub-test
-  gpu_id: 0
+  gpu_id: 0,1
 train:
-  num_workers: 2 # If your cpu and gpu are both very strong, set to 0 may be faster!
+  num_workers: 0 # If your cpu and gpu are both very strong, set to 0 may be faster!
   batch_size: 24
   cache_all_data: true # Save Internal-Memory or Graphics-Memory if it is false, but may be slow
   cache_device: 'cpu' # Set to 'cuda' to cache the data into the Graphics-Memory, fastest speed for strong gpu
